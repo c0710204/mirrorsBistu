@@ -11,7 +11,13 @@
 	$mirrorstatuspath='../mirrorstatus/'.$mirror.'.json';
 	$mirrorinfopath='../mirrorinfo/'.$mirror.'.json';
 	$mirrorstatus=json_decode(file_get_contents($mirrorstatuspath),1);
-	$mirrorinfo=json_decode(file_get_contents($mirrorinfopath),1);
+	if (file_exists($mirrorinfopath))
+		$mirrorinfo=json_decode(file_get_contents($mirrorinfopath),1);
+	else
+	{
+		system('mv ../mirrorinfo/.json ../mirrorinfo/'.$mirror.'.json');
+		$mirrorinfo=json_decode(file_get_contents($mirrorinfopath),1);
+	}
 	/*
 	status:
 	0=online

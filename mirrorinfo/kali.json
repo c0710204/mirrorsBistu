@@ -12,22 +12,6 @@
 		"aptsiteinfo":
 		[
 			{
-				"site":"http://security.kali.org/kali-security",
-				"sourcedir":"kali/updates",
-				"softtype":
-				[
-					"main",
-					"contrib",
-					"non-free"
-				],
-				"supported_platform":
-				[
-					"amd64",
-					"i386",
-					"src"
-				]
-			},
-			{
 				"site":"http://http.kali.org/kali",
 				"sourcedir":"kali",
 				"softtype":
