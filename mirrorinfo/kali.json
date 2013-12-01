@@ -1,0 +1,10 @@
+{
+	"rootpath":"/mirrors/apt/mirror/http.kali.org/kali/",
+	"href":"kali/",
+	"intro":"一个基于 Debian 的 Linux 发行版，包含很多安全和取证方面的相关工具。支持 ARM架构。",
+	"name":"kali",
+	"title":"kali",
+	"official":"non-official",
+	"worker_link":"http://www.guxiang.net.cn/",
+	"worker_name":"c0710204"
+}

@@ -1,0 +1,10 @@
+{
+	"rootpath":"/mirrors/pypi/web/",
+	"href":"pypi/",
+	"intro":"python package index",
+	"name":"pypi",
+	"title":"pypi",
+	"official":"non-official",
+	"worker_link":"http://www.idefs.com/",
+	"worker_name":"fmyzjs"
+}

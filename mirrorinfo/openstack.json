@@ -1,0 +1,10 @@
+{
+	"rootpath":"/mirrors/apt/mirror/ubuntu-cloud.archive.canonical.com",
+	"href":"openstack/",
+	"intro":"openstack",
+	"name":"openstack",
+	"title":"openstack",
+	"official":"non-official",
+	"worker_link":"http://www.guxiang.net.cn/",
+	"worker_name":"c0710204"
+}
