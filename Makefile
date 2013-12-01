@@ -1,3 +1,5 @@
+nothing:
+	echo "nothing"
 remove:
 	@-rm -R /var/www/index.* /var/www/files/ /var/www/libs/ /var/www/web/ 2>/dev/zero
 install:
