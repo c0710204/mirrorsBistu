@@ -1,0 +1,264 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"is_a",
+				"is_array"
+			],
+			[
+				"row",
+				"rowlist"
+			],
+			[
+				"res",
+				"result1"
+			],
+			[
+				"is",
+				"is_a"
+			],
+			[
+				"form",
+				"formlist"
+			],
+			[
+				"for",
+				"foreach	foreach …"
+			],
+			[
+				"__",
+				"__toString"
+			],
+			[
+				"qu",
+				"querystr"
+			],
+			[
+				"th",
+				"this"
+			],
+			[
+				"isa",
+				"is_array"
+			],
+			[
+				"wh",
+				"where_connect_type"
+			],
+			[
+				"p",
+				"property	@property"
+			],
+			[
+				"au",
+				"author"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"git add",
+				"Git: Add Current File"
+			],
+			[
+				"git st",
+				"Git: Status"
+			],
+			[
+				"git",
+				"Github: Blame"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"php",
+				"Snippet: Add the MIT license to a plain text file"
+			],
+			[
+				"doc",
+				"DocBlockr: Decorate line comment"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"list",
+				"Package Control: List Packages"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 640.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/E/webproject/ibistu_server/api/includes/api/action_map.php",
+		"/E/webproject/ibistu_server/api/api2.php",
+		"/E/webproject/ibistu_server/api/api.php",
+		"/E/webproject/ibistu_server/api/settings/setting.php",
+		"/E/webproject/ibistu_server/api/settings/local.php",
+		"/E/webproject/ibistu_server/api-servers/listapp.php",
+		"/C/Users/asus/AppData/Roaming/Sublime Text 2/Packages/DocBlockr/Base File.sublime-settings",
+		"/C/Users/asus/AppData/Roaming/Sublime Text 2/Packages/phpDocumentor/phpdocumentor.sublime-settings",
+		"/C/Users/asus/Git.sublime-settings",
+		"/C/Program Files (x86)/IIS Express/PHP/v5.5/php.ini",
+		"/C/Users/asus/AppData/Roaming/Sublime Text 2/Packages/SublimeCodeIntel/.codeintel/config",
+		"/C/Users/asus/AppData/Roaming/Sublime Text 2/Packages/Language - English/en_US.dic",
+		"/C/Users/asus/AppData/Roaming/Sublime Text 2/Packages/Function Name Display/Function Name Display.sublime-settings",
+		"/C/Users/asus/AppData/Roaming/Sublime Text 2/Packages/sublime-jsdocs/jsdocs-auto-complete.sublime-macro",
+		"/C/Users/asus/AppData/Roaming/Sublime Text 2/Packages/User/Distraction Free.sublime-settings",
+		"/C/Users/asus/AppData/Roaming/Sublime Text 2/Packages/User/Base File.sublime-settings",
+		"/E/webproject/nova/nova/console/vmrc_manager.py",
+		"/E/webproject/nova/nova/virt/vmwareapi/driver.py",
+		"/E/webproject/nova/nova/virt/vmwareapi/vif.py",
+		"/E/webproject/nova/nova/virt/vmwareapi/vim.py",
+		"/E/webproject/nova/nova/virt/xenapi/agent.py",
+		"/D/minecraft/.minecraft/assets/lang/es_ES.lang",
+		"/C/Users/asus/Documents/Egosoft/X Rebirth/79401921/save/save_007.xml",
+		"/D/NTLEA/RegAsm.com",
+		"/C/Users/asus/Documents/Egosoft/X Rebirth/79401921/save/quicksave.xml"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"memory",
+			"<unavailable>",
+			"amount=\"62\"/>",
+			"amount=\"62\"",
+			"\"62\"",
+			"plutarch",
+			"\"-0.2"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.git":
+	{
+		"height": 148.0
+	},
+	"output.sftp":
+	{
+		"height": 0.0
+	},
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 154.0,
+	"status_bar_visible": true
+}
