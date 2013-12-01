@@ -1,7 +1,7 @@
 {
-	"rootpath":"/mirrors/apt/mirror/http.kali.org/kali/",
-	"href":"kali/",
-	"intro":"一个基于 Debian 的 Linux 发行版，包含很多安全和取证方面的相关工具。支持 ARM架构。",
+	"rootpath":"/mirrors/apt/mirror/security.kali.org/kali-security/",
+	"href":"kali/kali-security/",
+	"intro":"一个基于 Debian 的 Linux 发行版，包含很多安全和取证方面的相关工具。支持 ARM架构。这是其安全更新库",
 	"name":"kali",
 	"title":"kali",
 	"official":"non-official",
@@ -14,22 +14,6 @@
 			{
 				"site":"http://security.kali.org/kali-security",
 				"sourcedir":"kali/updates",
-				"softtype":
-				[
-					"main",
-					"contrib",
-					"non-free"
-				],
-				"supported_platform":
-				[
-					"amd64",
-					"i386",
-					"src"
-				]
-			},
-			{
-				"site":"http://http.kali.org/kali",
-				"sourcedir":"kali",
 				"softtype":
 				[
 					"main",
