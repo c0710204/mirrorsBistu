@@ -25,7 +25,7 @@
 	2=sync unsuccess
 	*/
 	$mirrorstatus['status']=$statuscode;
-	echo $mirror."\nsize:\t\t";
+	echo "\033[31m".$mirror."\033[0m\nsize:\t\t";
 	$mirrorstatus['size']=system("du -sm ".$mirrorinfo['rootpath'].' |awk \'{print $1}\' ');
 	if ($mirrorstatus['size']>1024) 
 		$mirrorstatus['size']=(ceil($mirrorstatus['size']*100/1024)/100).'G';

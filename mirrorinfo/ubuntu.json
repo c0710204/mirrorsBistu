@@ -1,5 +1,5 @@
 {
-	"rootpath":"/mirrors/apt/mirror/mirrors.tuna.tsinghua.edu.cn",
+	"rootpath":"/mirrors/apt/mirror/mirrors.tuna.tsinghua.edu.cn/",
 	"href":"ubuntu/",
 	"intro":"基于 Debian 的以桌面应用为主的 Linux 发行版。",
 	"name":"ubuntu",
