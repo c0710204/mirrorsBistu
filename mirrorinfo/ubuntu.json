@@ -1,10 +1,1 @@
-{
-	"rootpath":"/mirrors/apt/mirror/mirrors.tuna.tsinghua.edu.cn/",
-	"href":"ubuntu/",
-	"intro":"基于 Debian 的以桌面应用为主的 Linux 发行版。",
-	"name":"ubuntu",
-	"title":"ubuntu",
-	"official":"non-official",
-	"worker_link":"http://www.guxiang.net.cn/",
-	"worker_name":"c0710204"
-}
+{"id":7,"rootpath":"\/mirrors\/apt\/mirror\/mirrors.ustc.edu.cn\/ubuntu","href":"ubuntu","intro":"ubuntu 12.04&13.10","name":"ubuntu","title":"ubuntu","official":false,"workerLink":"http:\/\/www.guxiang.net.cn\/","workerName":"c0710204","status":{}}

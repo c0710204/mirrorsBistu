@@ -131,7 +131,7 @@ Groups</a>，或直接向 Google Groups 的邮件列表 thu-opensource-mirror-ad
 <ul>
 <li>第一列显示是否为发行版/项目的官方软件源。</li>
 <li>对于正在同步和同步失败的镜像，大小、文件总数、同步完成时间等信息取自最近一次成功同步时的日志。</li>
-<li>请求次数/数据量取自最近七日的 HTTP 请求。</li>
+<li>请求次数/数据量取自最近七日的<a href="/awstats/awstats.mirror.bistu.edu.cn.html">HTTP 请求。</a></li>
 </ul>
 </div> <!-- end of status-table-footnote div -->
 </div> <!-- end of status-table div -->

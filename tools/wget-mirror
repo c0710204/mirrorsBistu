@@ -1,0 +1,77 @@
+#!/usr/bin/php
+
+<?php
+
+$configfile='wget-mirror.list';
+$urls=array();
+$cfg=array();
+
+$cfg['prefix']='/mirrors/wget/';
+$cfg['mirror_dir']='mirror';
+$cfg['lockfile']='wget-mirror.lock';
+
+function printlog($records,$type='info')
+{
+	date_default_timezone_set('Asia/Shanghai');
+	$time=date('c');
+	$reqs=explode("\n", $records);
+	foreach ($reqs as $value) {file_put_contents('php://stdout',"[$type|$time]$value\n");}
+}
+function loadconfig($configfile)
+{
+	$configf=file_get_contents($configfile);
+	$configlines=explode("\n", $configf);
+	$configlines_config=preg_grep("/^cfg .*=.*$/i", $configlines);
+	$configlines_download=preg_grep("/^wget .*$/i", $configlines);
+	foreach ($configlines_download as $configline) {
+		$matches=array();
+		preg_match("/^wget (.*)$/i", $configline, $matches);
+		array_push($urls,$matches[1]);
+	}	
+	$configlines_download=preg_grep("/^wget .*$/i", $configlines);
+	foreach ($configlines_download as $configline) {
+		$matches=array();
+		preg_match("/^wget (.*)$/i", $configline, $matches);
+		array_push($urls,$matches[1]);
+	}
+}
+//loadconfig($configfile);
+function loadfilelist($url,$cfg=array())
+{
+
+	$list_path=$cfg['prefix'].'/wgetlist.txt';
+	$dirtry_path=$cfg['prefix'].'/'.$cfg['mirror_dir'].'/';
+	printlog('start downloading list');
+	system("./wget/bin/wget -P $dirtry_path -t10  -m $url -np -nd  --random-wait -nv --spider -o $list_path");
+	printlog('finish downloading list');
+}
+loadfilelist("mirrors.ustc.edu.cn/centos/",$cfg);
+exit(0);
+function f($i)
+{
+	printlog("worker thread $i start");
+	//cmd
+	//./wget -P $prefix/mirror_dir/ -t10  -m $host -np  --random-wait
+	system();
+	printlog("worker thread $i finished");
+}
+function m()
+{
+	printlog("main");
+}
+function mutifork($num,$func_main,$func_fork)
+{
+	for ($i=0; $i <$num ; $i++) { 
+		$pids[$i] = pcntl_fork();		
+		if ($pids[$i]==0)
+		{
+			$func_fork($i);
+			exit(0);
+		}
+	}
+	for ($i=0; $i <$num ; $i++) { pcntl_wait($status);}
+	$func_main();
+}
+
+mutifork(10,m,f);
+//  print_r($p);

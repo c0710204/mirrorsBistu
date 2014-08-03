@@ -9,6 +9,7 @@
 	$mirror=$minfo[0];
 	$statuscode=$_SERVER['argv'][2];
 	$mirrorstatuspath='../mirrorstatus/'.$mirror.'.json';
+	$mirrorstatushttppath='http://mirrors.bistu.edu.cn/app_dev.php/updatestatus/'.$mirror.'/';
 	$mirrorinfopath='../mirrorinfo/'.$mirror.'.json';
 	$mirrorstatus=json_decode(file_get_contents($mirrorstatuspath),1);
 	if (file_exists($mirrorinfopath))
@@ -36,5 +37,4 @@
 	$mirrorstatus['updatetime']=date("Y-m-d H:i");
 	$mirrorstatus['filecount']=system("find ".$mirrorinfo['rootpath'].' |wc -l');
 	file_put_contents($mirrorstatuspath, json_encode($mirrorstatus));
-	
-	
+	file_get_contents($mirrorstatushttppath.json_encode($mirrorstatus));

@@ -1,0 +1,255 @@
+#!/usr/bin/php
+
+<?php
+
+$configfile='yum-mirror.list';
+$repomdlist=array();
+$repodatalist=array();
+$repokeylist=array();
+$urls=array();
+$cfg=array();
+
+//$cfg['prefix']='/mirrors/yum/';
+//$cfg['mirror_dir']='mirror';
+//$cfg['lockfile']='yum-mirror.lock';
+
+//default config 
+  $cfg["base_path"] = "/mirrors/yum";
+  $cfg["mirror_path"] = '$base_path/mirror';
+  $cfg["skel_path"] = '$base_path/skel';
+  $cfg["var_path"] = '$base_path/var';
+  $cfg["cleanscript"] = '$var_path/clean.sh';
+  $cfg["defaultarch"] = "amd64";
+  $cfg["postmirror_script"] = '$var_path/postmirror.sh';
+  $cfg["run_postmirror"] = 0;
+  $cfg["nthreads"] = 20;
+  $cfg["_tilde"] = 0;
+//common function
+function getregline($lines,$reg){
+	$configlines=explode("\n", $lines);
+	$configlines_reg=preg_grep($reg, $configlines);
+	return $configlines_reg;
+}
+function getgrepline($lines,$grepstr){
+	return getregline($lines,"/.*$grepstr.*/");
+}
+killall yum-mirror
+
+
+
+killall mirror
+
+
+
+killall yum=mirror
+ps
+function printlog($records,$type='info'){
+	date_default_timezone_set('Asia/Shanghai');
+	$time=date('c');
+	$reqs=explode("\n", $records);
+	foreach ($reqs as $value) {file_put_contents('php://stdout',"[$type|$time]$value\n");}
+}
+function removexg($str){
+	$str=str_replace("\\", '/', $str);
+	$count=1;
+	while($count!=0)
+	{
+		$str=str_replace('//', '/', $str,$count);
+	}
+	$str=str_replace("http:/", 'http://', $str);
+	$str=str_replace("ftp:/", 'ftp://', $str);
+	return $str;
+}
+function removelastpath($url)
+{
+	$paths=explode('/',$url);
+	array_pop($paths);
+	return implode('/', $paths);
+}
+//load function
+function loadconfig($configfile,&$urls,&$cfg,&$keys){
+	$configf=file_get_contents($configfile);
+	$configlines_download=getregline($configf,"/^\s*yum\s+\S*\s*.*$/i");
+	foreach ($configlines_download as $configline) {
+		$matches=array();
+		preg_match("/^\s*yum\s+(\S*)\s*.*$/i", $configline, $matches);
+		if ($matches!=0)array_push($urls,$matches[1]);
+	}	
+	$configlines_keys=getregline($configf,"/^\s*yum-key\s+\S*\s*.*$/i");
+	foreach ($configlines_keys as $configline) {
+		$matches=array();
+		preg_match("/^\s*yum-key\s+(\S*)\s*.*$/i", $configline, $matches);
+		if ($matches!=0)array_push($keys,$matches[1]);
+	}	
+	$configlines_config=getregline($configf,"/^\s*set\s+\S*\s+\S*.*$/i");
+	foreach ($configlines_config as $configline) {
+		$matches=array();
+		preg_match("/^\s*set\s+(\S*)\s+(\S*).*$/i", $configline, $matches);
+		if ($matches!=0)$cfg[$matches[1]]=$matches[2];
+	}
+}
+function loadrepodmd($site,$cfg=array()){
+	$list=array();
+	$repomd=file_get_contents(removexg($site.'/repodata/repomd.xml'));
+	$filelist=getregline($repomd,'/<location href="repodata\/(\S*)-(\S*).xml.gz"\/>/');
+	foreach ($filelist as $fileline) {
+		$matches=array();
+		preg_match('/<location href="(repodata\/(\S*)-(\S*).xml.gz)"\/>/', $fileline, $matches);
+		if ($matches!=0)array_push($list,removexg($site.'/'.$matches[1]));
+	}
+	return $list;
+}
+function loadrepodmd_all($site,$cfg=array()){
+	$list=array();
+	$repomd=file_get_contents(removexg($site.'/repodata/repomd.xml'));
+	$filelist=getregline($repomd,'/<location href="repodata\/(\S*)-(\S*)"\/>/');
+	foreach ($filelist as $fileline) {
+		$matches=array();
+		preg_match('/<location href="(repodata\/(\S*)-(\S*))"\/>/', $fileline, $matches);
+		if ($matches!=0)array_push($list,removexg($site.'/'.$matches[1]));
+	}
+	return $list;
+}
+function loadfilelist($url,$cfg=array()){
+	$list_path=$cfg['prefix'].'/wgetlist.txt';
+	$dirtry_path=$cfg['prefix'].'/'.$cfg['mirror_dir'].'/';
+	printlog('start downloading list');
+	system("./wget/bin/wget -P $dirtry_path -t10  -m $url -np -nd  --random-wait -nv --spider -o $list_path");
+	printlog('finish downloading list');
+}
+//download funciton
+function buildworkdir($cfg)
+{
+	if(!(file_exists(removexg($cfg['base_path']))))
+		mkdir(removexg($cfg['base_path']));
+	if(!(file_exists(removexg(str_replace('$base_path', $cfg['base_path'],$cfg["var_path"])))))
+		mkdir(removexg(str_replace('$base_path', $cfg['base_path'],$cfg["var_path"])));
+	if(!(file_exists(removexg(str_replace('$base_path', $cfg['base_path'],$cfg["skel_path"]).'/'))))
+		mkdir(removexg(str_replace('$base_path', $cfg['base_path'],$cfg["skel_path"]).'/'));
+	if(!(file_exists(removexg(str_replace('$base_path', $cfg['base_path'],$cfg["mirror_path"]).'/'))))
+		mkdir(removexg(str_replace('$base_path', $cfg['base_path'],$cfg["mirror_path"]).'/'));
+}
+function downloadurls($urls,$cfg,$extra="")
+{
+	$list_path=removexg(str_replace('$base_path', $cfg['base_path'],$cfg["var_path"].'/list.txt'));
+	$output_path=removexg(str_replace('$base_path', $cfg['base_path'],$cfg["var_path"].'/output.txt'));
+	$dirtry_path=removexg(str_replace('$base_path', $cfg['base_path'],$cfg["skel_path"]).'/');	
+	file_put_contents($list_path, implode("\n",$urls));
+	printlog('start downloading');	
+	system("./wget/bin/wget -P $dirtry_path -t10 -np $extra --random-wait -nv  -i $list_path -o $output_path");
+	printlog('finish downloading');	
+}
+function getdownloadlist($cfg)
+{
+	$output_path=removexg(str_replace('$base_path', $cfg['base_path'],$cfg["var_path"].'/output.txt'));
+	$wgetlist_path=removexg(str_replace('$base_path', $cfg['base_path'],$cfg["var_path"].'/wgetlist.txt'));
+	if (!(file_exists($output_path))) return array();
+	system("cat $output_path|grep URL:|awk '{print( $3 \" \" $6);}'>$wgetlist_path");
+	$wgetlines=getregline(file_get_contents($wgetlist_path),'/URL:(\S*):\/\/(\S*) "(\S*)"/');
+	$wgetlist=array();
+	foreach ($wgetlines as $fileline) {
+		$matches=array();
+		preg_match('/URL:(\S*?) "(\S*)"/', $fileline, $matches);
+		if ($matches!=0)$wgetlist[removexg($matches[1])]=$matches[2];
+	}	
+	return $wgetlist;
+}
+function gunzip($path)
+{
+	system("gunzip $path -f");
+	$temp=pathinfo($path);
+	return $temp['dirname'].'/'.$temp['filename'];
+}
+//******************repomd**********************************
+loadconfig($configfile,$urls,$cfg,$repokeylist);
+buildworkdir($cfg);
+
+//print_r($cfg);
+$xmllist=array();
+
+foreach ($urls as $repomdurl) {
+	array_push($repomdlist,removexg($repomdurl.'/repodata/repomd.xml'));
+	$xmllist=array_merge($xmllist,loadrepodmd($repomdurl,$cfg));
+	$repodatalist=array_merge($repodatalist,loadrepodmd_all($repomdurl,$cfg));
+}
+
+downloadurls($xmllist,$cfg,' -nd -N '); 
+
+$list=getdownloadlist($cfg);
+$repotype=array("primary","other");
+$rpmlist=array();
+$rpmrawlist=array();
+$repodata=array();
+$i=0;
+//*********************repodata******************************
+printlog("Proceed indexes start");
+	foreach($list as $key=>$file)
+	{
+		$i++;
+		if ($i%5==0)printlog("Proceed indexes ".sprintf("%.2f",$i*100/count($list)).'%');
+		$rpmroot=removelastpath(removelastpath($key));
+		$xmlpath=gunzip($file);
+		$xmlcontent=file_get_contents($xmlpath);
+		$rpmlist_org=getregline($xmlcontent,'/<location href="(\S*)"\/>/');
+		$rpmrawlist=array_merge($rpmrawlist,getgrepline($xmlcontent,"<location"));
+		foreach ($rpmlist_org as $fileline) {
+			$matches=array();
+			preg_match('/<location href="(\S*)"\/>/', $fileline, $matches);
+			if ($matches!=0)array_push($rpmlist,removexg($rpmroot.'/'.$matches[1]));
+		}		
+	}
+printlog("Proceed indexes finish");
+$wgetlist=array_merge(
+	$repomdlist,
+	$repodatalist,
+	$repokeylist,
+	$rpmlist
+	);
+printlog("total: ".count($wgetlist).' file');
+//*****************wget list*********************************
+for ($i=0; $i <$cfg['nthreads'] ; $i++) {
+	$wgetlist_path[$i]=removexg(str_replace('$base_path', $cfg['base_path'],$cfg["skel_path"]."/wgetlist_$i.txt"));
+	if (file_exists($wgetlist_path[$i])) unlink($wgetlist_path[$i]);
+}
+printlog("Build download list start"); 
+	$qut=count($wgetlist)/5;
+	for ($i=0; $i <count($wgetlist) ; $i++) { 
+		if ($i%$qut==0)printlog("Build download list ".sprintf("%.2f",$i*100/count($wgetlist)).'%');
+		file_put_contents($wgetlist_path[$i%$cfg['nthreads']], $wgetlist[$i]."\n",FILE_APPEND);
+	}
+printlog("Build download list finish");
+//*********************************************************
+
+
+function f($i,$cfg)
+{
+	//printlog("worker thread $i start");
+	//cmd
+	//./wget -P $prefix/mirror_dir/ -t10  -m $host -np  --random-wait
+	$list_path=removexg(str_replace('$base_path', $cfg['base_path'],$cfg["skel_path"]."/wgetlist_$i.txt"));
+	$dirtry_path=removexg(str_replace('$base_path', $cfg['base_path'],$cfg["mirror_path"]).'/');	
+	system("./wget/bin/wget -P $dirtry_path -t10 -np -x --random-wait -nv -N -i $list_path -o $list_path.log");
+	//printlog("worker thread $i finished");
+}
+function m()
+{
+	printlog("Download finish",'success');
+}
+function mutifork($num,$func_main,$func_fork,$cfg)
+{
+	for ($i=0; $i <$num ; $i++) { 
+		$pids[$i] = pcntl_fork();		
+		if ($pids[$i]==0)
+		{
+			@$func_fork($i,$cfg);
+			exit(0);
+		}
+	}
+	for ($i=$num; $i >0 ; $i--) {
+		printlog("remain " . $i ." worker...");
+		pcntl_wait($status);
+	}
+	@$func_main();
+}
+
+mutifork($cfg['nthreads'],"m","f",$cfg);

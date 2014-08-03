@@ -1,0 +1,277 @@
+#!/usr/bin/php
+<?php
+$GLOBALS['cfg'] = parse_ini_file('config.ini');
+
+function printlog($records,$type='info',$timestamp=-1){
+	date_default_timezone_set('Asia/Shanghai');
+	if ($timestamp>=0)	$time=date('c',$timestamp);else $time=date('c');
+	$reqs=explode("\n", $records);
+	foreach ($reqs as $value) {file_put_contents('php://stdout',"\n[$type|$time]$value");}
+}
+function logstatus(array $log){
+	$num_warning=0;
+	$logreg=preg_grep('/\\[(info|error|warning|success)\\|(.*)\\](.*)/i', $log);
+	foreach ($logreg as $line) {
+		$matchs=array();
+		preg_match('/\\[(info|error|warning|success)\\|(.*)\\](.*)/i', $line, $matchs);
+		
+		if ($matchs[1]=="error") {
+			printlog($matchs[3],"warning",strtotime($matchs[2]));	
+			return -1;
+		}
+		if ($matchs[1]=="success") return 65535;
+		if ($matchs[1]=="warning") $num_warning++;
+		printlog($matchs[3],$matchs[1],strtotime($matchs[2]));	
+	}
+	return $num_warning;	
+}
+function subproc_run( $cmd, $cwd,$callback_stdout,$callback_stderr=null){
+	if ($callback_stderr===null)$callback_stderr=$callback_stdout;
+	$raw_out='';
+	$raw_err='';
+	$descriptorspec = array(
+   		0 => array("pipe", "r"),  // stdin is a pipe that the child will read from
+   		1 => array("pipe", "w"),  // stdout is a pipe that the child will write to
+   		2 => array("pipe", "w")   // stderr is a file to write to
+	);
+	$pipes=array();
+	$handle=proc_open('exec '.$cmd,$descriptorspec,$pipes,$cwd);
+	$proc_status=proc_get_status($handle);
+
+	$i=0;$diskch=array('-','\\','|','/');
+ 	while($proc_status['running']){ 
+        // stdout
+        //printlog(1);
+        $val_out=fread($pipes[1],1);
+        //if ($val_out===false) break;
+        $raw_out=$raw_out.$val_out; 
+        $callback_stdout($raw_out);
+        //stderr
+        //printlog(2);
+
+        //status
+        //printlog(3);
+        //file_put_contents('php://stdout',"\x8".$diskch[($i++)%4]);
+       	$proc_status=proc_get_status($handle);//printlog($proc_status['running']?'running...':'stop');
+       	//var_dump($proc_status);
+    } 
+    $val_err=fread($pipes[2],1);
+        //if ($val_err===false) break;
+    $raw_err=$raw_err.$val_err;  
+    printlog($raw_err);  
+    $callback_stderr($raw_err);
+	proc_terminate($handle);
+	proc_close($handle);
+}
+function argloader(register $register){
+	if ($_SERVER['argc']==1)
+	{
+		//no argv
+		//todo: start console
+		printlog("No command");
+		exit(0);
+	}
+	if ($_SERVER['argc']==2)
+	{
+		//1 argv
+		$register->loadcmd1($_SERVER['argv'][1]);
+		exit(0);
+	}	
+	if ($_SERVER['argc']==3)
+	{
+		//2 argv
+		$register->loadcmd2($_SERVER['argv'][1],$_SERVER['argv'][2]);
+		exit(0);
+	}	
+	if ($_SERVER['argc']==4)
+	{
+		//3 argv
+		$register->loadcmd3($_SERVER['argv'][1],$_SERVER['argv'][2],$_SERVER['argv'][3]);
+		exit(0);
+	}	
+}
+class register{
+	public $cmd_arg0=array();
+	public $cmd_arg1=array();
+	public $cmd_arg2=array();
+	public function loadcmd1($func){
+		printlog($func);
+		$this->cmd_arg0[$func]();
+	}
+	public function loadcmd2($func,$argv1){
+		//printlog($func);
+		$this->cmd_arg1[$func]($argv1);
+	}
+	public function loadcmd3($func,$argv1,$argv2){
+		//printlog($func);
+		$this->cmd_arg2[$func]($argv1,$argv2);
+	}
+}
+$reg=new register();
+$GLOBALS['register']=$reg;
+#*************************register&loader******************
+//cmd:proxy update ubuntu 1
+//update single mirror
+$mirror_status_update=function ($mirror,$statuscode){
+	$prefix=$GLOBALS['cfg']['prefix'];
+	$mirrors_info_path=$GLOBALS['cfg']['mirrors_info_path'];
+	$mirrorstatuspath=$prefix.$mirrors_info_path.'/'.$mirror.'/status.json';
+	$mirrorstatushttppath='http://mirrors.bistu.edu.cn/app_dev.php/updatestatus/'.$mirror.'/';
+	$mirrorinfopath=$prefix.$mirrors_info_path.'/'.$mirror.'/info.json';
+	if (file_exists($mirrorinfopath))
+		$mirrorinfo=json_decode(file_get_contents($mirrorinfopath),1);
+	else
+		$mirrorinfo=json_decode('{"id":0,"rootpath":"","href":"","intro":"","name":"","title":"","official":false,"workerLink":"","workerName":"","status":{}}',1);
+	if (file_exists($mirrorstatuspath))
+		$mirrorstatus=json_decode(file_get_contents($mirrorstatuspath),1);
+	else
+		$mirrorstatus=json_decode('{"status":"","size":"","filecount":"","updatetime":""}',1);	
+	/*
+	status:
+	0=online
+	1=onsync
+	2=sync unsuccess
+	*/
+	$mirrorstatus['status']=$statuscode;
+	printlog("set $mirror to $statuscode");
+	$mirrorstatus['size']=exec("du -sm ".$mirrorinfo['rootpath'].' |awk \'{print $1}\' ');
+	if ($mirrorstatus['size']>1024) 
+		$mirrorstatus['size']=(ceil($mirrorstatus['size']*100/1024)/100).'G';
+	else
+		$mirrorstatus['size']=$mirrorstatus['size'].'M';
+	printlog("$mirror size:\t\t".$mirrorstatus['size']);
+	date_default_timezone_set('Asia/Shanghai');
+	$mirrorstatus['updatetime']=date("Y-m-d H:i");
+	$mirrorstatus['filecount']=exec("find ".$mirrorinfo['rootpath'].' |wc -l');
+	printlog("$mirror file count:\t".$mirrorstatus['filecount']);
+	file_put_contents($mirrorstatuspath, json_encode($mirrorstatus));
+	file_get_contents($mirrorstatushttppath.json_encode($mirrorstatus));
+};
+$reg->cmd_arg2['update']=$mirror_status_update;
+//cmd proxy update 1
+//update all mirror
+$mirror_status_updateall=function ($statuscode){
+	$prefix=$GLOBALS['cfg']['prefix'];	
+	$mirrors_info_path=$GLOBALS['cfg']['mirrors_info_path'];	
+	$mirrorlist=array();
+	if (false != ($handle = opendir ( $prefix.$mirrors_info_path))) {
+        while ( false !== ($file = readdir ( $handle )) ) {
+            if ($file != "." && $file != ".."&&!strpos($file,".")) {array_push($mirrorlist, $file);}
+        }
+        //关闭句柄
+        closedir ( $handle );
+    }
+    else{printlog("cannot open mirror info dir ","error");}
+
+	printlog("update all mirrors start");
+	foreach ($mirrorlist as $mirror) {
+		$GLOBALS['register']->loadcmd3('update',$mirror,$statuscode);
+	}
+	printlog("update all mirrors finish");
+};
+$reg->cmd_arg1['update']=$mirror_status_updateall;
+//cmd:proxy mirrorupdate ubuntu
+$mirror_update=function ($mirror){
+	$prefix=$GLOBALS['cfg']['prefix'];		
+	$mirrors_info_path=$GLOBALS['cfg']['mirrors_info_path'];	
+	$tools_path=$GLOBALS['cfg']['tools_path'];	
+	if (!file_exists("$prefix$tools_path/apt-mirror")) {
+		printlog('Tool apt-mirror don`t exisit','error');
+		return;
+	}
+	if (!file_exists("$prefix$mirrors_info_path/$mirror/")) {
+		printlog('mirror info don`t exisit','error');
+		return;
+	}	
+	$GLOBALS['register']->loadcmd3('update',$mirror,1);
+	$log=array();
+	$status=0;$status_lock=false;
+	$callback=function(&$rawlog) use (&$status,&$status_lock){
+        $log=explode("\n", $rawlog);
+       	$rawlog=$log[count($log)-1];
+       	unset($log[count($log)-1]);
+       	if (!($status_lock))$status=logstatus($log);
+       	if ($status<0) $status_lock=true;
+       	if ($status==65535) $status_lock=true;
+	};
+	printlog("loading...");
+	subproc_run("$prefix$tools_path/apt-mirror $prefix$mirrors_info_path/$mirror/apt-mirror.list","/",$callback);
+	printlog("finish!");
+	$GLOBALS['register']->loadcmd3('update',$mirror,$status>=0?0:2);	
+};
+$reg->cmd_arg1['mirrorupdate']=$mirror_update;
+
+//cmd:proxy mirrorupdate ubuntu
+$mirror_update1=function ($mirror){
+	$prefix=$GLOBALS['cfg']['prefix'];		
+	$mirrors_info_path=$GLOBALS['cfg']['mirrors_info_path'];	
+	$tools_path=$GLOBALS['cfg']['tools_path'];	
+	if (!file_exists("$prefix$tools_path/apt-mirror")) {
+		printlog('Tool apt-mirror don`t exisit','error');
+		return;
+	}
+	if (!file_exists("$prefix$mirrors_info_path/$mirror/")) {
+		printlog('mirror info don`t exisit','error');
+		return;
+	}	
+	$GLOBALS['register']->loadcmd3('update',$mirror,1);
+	$log=array();
+	$status=0;$status_lock=false;
+	$callback=function(&$rawlog) use (&$status,&$status_lock){
+        $log=explode("\n", $rawlog);
+       	$rawlog=$log[count($log)-1];
+       	unset($log[count($log)-1]);
+       	if (!($status_lock))$status=logstatus($log);
+       	if ($status<0) $status_lock=true;
+       	if ($status==65535) $status_lock=true;
+	};
+	printlog("loading...");
+	system ("$prefix$tools_path/apt-mirror $prefix$mirrors_info_path/$mirror/apt-mirror.list");
+	printlog("finish!");
+	//$GLOBALS['register']->loadcmd3('update',$mirror,$status>=0?0:2);	
+};
+$reg->cmd_arg1['mirrorinlineupdate']=$mirror_update1;
+$mirror_updateall=function (){
+	$prefix=$GLOBALS['cfg']['prefix'];	
+	$mirrors_info_path=$GLOBALS['cfg']['mirrors_info_path'];	
+	$mirrorlist=array();
+	if (false != ($handle = opendir ( $prefix.$mirrors_info_path))) {
+        while ( false !== ($file = readdir ( $handle )) ) {
+            if ($file != "." && $file != ".."&&!strpos($file,".")) {array_push($mirrorlist, $file);}
+        }
+        //关闭句柄
+        closedir ( $handle );
+    }
+    else{printlog("cannot open mirror info dir ","error");}
+
+	printlog("update all mirrors start");
+	foreach ($mirrorlist as $mirror) {
+		printlog("update \033[31m".$mirror."\033[0m start");
+		$GLOBALS['register']->loadcmd2('mirrorupdate',$mirror);
+		printlog("update \033[31m".$mirror."\033[0m files finish");
+	}
+	
+};
+$reg->cmd_arg0['mirrorupdate']=$mirror_updateall;
+$help=function(){
+	echo "\033[34m
+ __  __ _                       _____           _ 
+|  \/  (_)_ __ _ __ ___  _ __  |_   _|__   ___ | |
+| |\/| | | '__| '__/ _ \| '__|   | |/ _ \ / _ \| |
+| |  | | | |  | | | (_) | |      | | (_) | (_) | |
+|_|  |_|_|_|  |_|  \___/|_|      |_|\___/ \___/|_|
+\033[0m                                                  
+\033[36mUsage:\033[0m
+\033[31mproxy \033[36mmirrorupdate [\033[33mmirror\033[36m] \033[36m:update file [for mirror] and status\033[0m
+\033[31mproxy \033[36mupdate [\033[33mmirror\033[36m] \033[36m:update and status[for mirror]\033[0m
+";
+};
+$reg->cmd_arg0['-h']=$help;
+$reg->cmd_arg0['--help']=$help;
+$reg->cmd_arg0['-?']=$help;
+#*************************main*****************************
+
+argloader($reg);
+
+
+

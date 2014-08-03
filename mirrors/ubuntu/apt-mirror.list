@@ -1,0 +1,42 @@
+#<pre>
+############# config ##################
+#
+ set base_path    /mirrors/ubuntu
+#
+ set mirror_path  $base_path/mirror
+ set skel_path    $base_path/skel
+ set var_path     $base_path/var
+ set cleanscript $var_path/clean.sh
+ set defaultarch  amd64
+ set postmirror_script $var_path/postmirror.sh
+ set run_postmirror 0
+set nthreads     20
+set _tilde 0
+#
+############# end config ##############
+
+deb-amd64 http://mirrors.ustc.edu.cn/ubuntu precise main restricted universe multiverse 
+deb-i386 http://mirrors.ustc.edu.cn/ubuntu precise main restricted universe multiverse 
+deb-amd64 http://mirrors.ustc.edu.cn/ubuntu precise-updates main restricted universe multiverse 
+deb-i386 http://mirrors.ustc.edu.cn/ubuntu precise-updates main restricted universe multiverse 
+deb-amd64 http://mirrors.ustc.edu.cn/ubuntu precise-security main restricted universe multiverse 
+deb-i386 http://mirrors.ustc.edu.cn/ubuntu precise-security main restricted universe multiverse 
+deb-amd64 http://mirrors.ustc.edu.cn/ubuntu precise-backports main restricted universe multiverse 
+deb-i386 http://mirrors.ustc.edu.cn/ubuntu precise-backports main restricted universe multiverse 
+deb-src http://mirrors.ustc.edu.cn/ubuntu precise main restricted universe multiverse 
+deb-src http://mirrors.ustc.edu.cn/ubuntu precise-security main restricted universe multiverse 
+deb-src http://mirrors.ustc.edu.cn/ubuntu precise-updates main restricted universe multiverse 
+deb-src http://mirrors.ustc.edu.cn/ubuntu precise-backports main restricted universe multiverse 
+deb-amd64 http://mirrors.ustc.edu.cn/ubuntu saucy main restricted universe multiverse 
+deb-i386 http://mirrors.ustc.edu.cn/ubuntu saucy main restricted universe multiverse  
+deb-amd64 http://mirrors.ustc.edu.cn/ubuntu saucy-updates main restricted universe multiverse  
+deb-i386 http://mirrors.ustc.edu.cn/ubuntu saucy-updates main restricted universe multiverse 
+deb-amd64 http://mirrors.ustc.edu.cn/ubuntu saucy-security main restricted universe multiverse 
+deb-i386 http://mirrors.ustc.edu.cn/ubuntu saucy-security main restricted universe multiverse 
+deb-amd64 http://mirrors.ustc.edu.cn/ubuntu saucy-backports main restricted universe multiverse 
+deb-i386 http://mirrors.ustc.edu.cn/ubuntu saucy-backports main restricted universe multiverse 
+deb-src http://mirrors.ustc.edu.cn/ubuntu saucy main restricted universe multiverse 
+deb-src http://mirrors.ustc.edu.cn/ubuntu saucy-security main restricted universe multiverse 
+deb-src http://mirrors.ustc.edu.cn/ubuntu saucy-updates main restricted universe multiverse 
+deb-src http://mirrors.ustc.edu.cn/ubuntu saucy-backports main restricted universe multiverse 
+#</pre>

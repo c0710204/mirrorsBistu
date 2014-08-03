@@ -1,0 +1,62 @@
+#<pre>
+############# config ##################
+ set base_path    /mirrors/yum
+#
+ set mirror_path  $base_path/mirror
+ set skel_path    $base_path/skel
+ set var_path     $base_path/var
+ set cleanscript $var_path/clean.sh
+ #defaultarch=x86_64|i386
+ set defaultarch  x86_64
+ set postmirror_script $var_path/postmirror.sh
+ set run_postmirror 0
+set nthreads     20
+set _tilde 0
+#
+############# end config ##############
+#yum-key http://mirrors.ustc.edu.cn/centos/RPM-GPG-KEY-CentOS-6
+#yum-key http://mirrors.ustc.edu.cn/centos/RPM-GPG-KEY-CentOS-5
+
+#yum http://mirrors.ustc.edu.cn/centos/6.5/updates/x86_64/
+#yum http://mirrors.ustc.edu.cn/centos/6.5/extras/x86_64/
+#yum http://mirrors.ustc.edu.cn/centos/6.5/centosplus/x86_64/
+#yum http://mirrors.ustc.edu.cn/centos/6.5/contrib/x86_64/
+#yum http://mirrors.ustc.edu.cn/centos/6.5/os/x86_64/
+#yum http://mirrors.ustc.edu.cn/centos/6.5/updates/i386/
+#yum http://mirrors.ustc.edu.cn/centos/6.5/extras/i386/
+#yum http://mirrors.ustc.edu.cn/centos/6.5/centosplus/i386/
+#yum http://mirrors.ustc.edu.cn/centos/6.5/contrib/i386/
+#yum http://mirrors.ustc.edu.cn/centos/6.5/os/i386/
+#yum http://mirrors.ustc.edu.cn/centos/5.10/updates/x86_64/
+#yum http://mirrors.ustc.edu.cn/centos/5.10/extras/x86_64/
+#yum http://mirrors.ustc.edu.cn/centos/5.10/centosplus/x86_64/
+#yum http://mirrors.ustc.edu.cn/centos/5.10/contrib/x86_64/
+#yum http://mirrors.ustc.edu.cn/centos/5.10/os/x86_64/
+#yum http://mirrors.ustc.edu.cn/centos/5.10/updates/i386/
+#yum http://mirrors.ustc.edu.cn/centos/5.10/extras/i386/
+#yum http://mirrors.ustc.edu.cn/centos/5.10/centosplus/i386/
+#yum http://mirrors.ustc.edu.cn/centos/5.10/contrib/i386/
+#yum http://mirrors.ustc.edu.cn/centos/5.10/os/i386/
+#puppet
+#yum http://yum.puppetlabs.com/el/6/products/x86_64
+#yum http://yum.puppetlabs.com/el/6/dependencies/x86_64
+#yum http://yum.puppetlabs.com/el/6/devel/x86_64
+#yum http://yum.puppetlabs.com/el/6/products/SRPMS
+#yum http://yum.puppetlabs.com/el/6/dependencies/SRPMS
+#yum http://yum.puppetlabs.com/el/6/devel/SRPMS
+#</pre>
+
+
+
+
+
+
+
+
+#yum http://yum.theforeman.org/releases/1.5/el6/x86_64
+#yum http://yum.theforeman.org/plugins/1.5/el6/x86_64
+#yum http://repos.fedorapeople.org/repos/openstack/openstack-icehouse/epel-6/
+yum http://yum.puppetlabs.com/el/6/products/x86_64/
+yum http://yum.puppetlabs.com/el/6/dependencies/x86_64/
+yum http://yum.puppetlabs.com/el/6/devel/x86_64/
+

@@ -1,0 +1,517 @@
+./apt-mirror.sh: line 25: /opt/mirrortools/mirrorInfoCollection/update.php kali.json 0: No such file or directory
+./apt-mirror.sh: line 25: /opt/mirrortools/mirrorInfoCollection/update.php kali_security.json 0: No such file or directory
+./apt-mirror.sh: line 25: /opt/mirrortools/mirrorInfoCollection/update.php mongodb.json 0: No such file or directory
+./apt-mirror.sh: line 25: /opt/mirrortools/mirrorInfoCollection/update.php openstack.json 0: No such file or directory
+./apt-mirror.sh: line 25: /opt/mirrortools/mirrorInfoCollection/update.php pypi.json 0: No such file or directory
+./apt-mirror.sh: line 25: /opt/mirrortools/mirrorInfoCollection/update.php ubuntu.json 0: No such file or directory
+./apt-mirror.sh: line 25: /opt/mirrortools/mirrorInfoCollection/update.php kali.json 0: No such file or directory
+./apt-mirror.sh: line 25: /opt/mirrortools/mirrorInfoCollection/update.php kali_security.json 0: No such file or directory
+./apt-mirror.sh: line 25: /opt/mirrortools/mirrorInfoCollection/update.php mongodb.json 0: No such file or directory
+./apt-mirror.sh: line 25: /opt/mirrortools/mirrorInfoCollection/update.php openstack.json 0: No such file or directory
+./apt-mirror.sh: line 25: /opt/mirrortools/mirrorInfoCollection/update.php pypi.json 0: No such file or directory
+./apt-mirror.sh: line 25: /opt/mirrortools/mirrorInfoCollection/update.php ubuntu.json 0: No such file or directory
+apt-mirror is already running, exiting at ./apt-mirror line 191.
+./apt-mirror.sh: line 25: /opt/mirrortools/mirrorInfoCollection/update.php kali.json 0: No such file or directory
+./apt-mirror.sh: line 25: /opt/mirrortools/mirrorInfoCollection/update.php kali_security.json 0: No such file or directory
+./apt-mirror.sh: line 25: /opt/mirrortools/mirrorInfoCollection/update.php mongodb.json 0: No such file or directory
+./apt-mirror.sh: line 25: /opt/mirrortools/mirrorInfoCollection/update.php openstack.json 0: No such file or directory
+./apt-mirror.sh: line 25: /opt/mirrortools/mirrorInfoCollection/update.php pypi.json 0: No such file or directory
+./apt-mirror.sh: line 25: /opt/mirrortools/mirrorInfoCollection/update.php ubuntu.json 0: No such file or directory
+./apt-mirror.sh: line 22: le: command not found
+./apt-mirror.sh: line 26: /opt/mirrortools/mirrorInfoCollection/update.php kali.json 0: No such file or directory
+./apt-mirror.sh: line 26: /opt/mirrortools/mirrorInfoCollection/update.php kali_security.json 0: No such file or directory
+./apt-mirror.sh: line 26: /opt/mirrortools/mirrorInfoCollection/update.php mongodb.json 0: No such file or directory
+./apt-mirror.sh: line 26: /opt/mirrortools/mirrorInfoCollection/update.php openstack.json 0: No such file or directory
+./apt-mirror.sh: line 26: /opt/mirrortools/mirrorInfoCollection/update.php pypi.json 0: No such file or directory
+./apt-mirror.sh: line 26: /opt/mirrortools/mirrorInfoCollection/update.php ubuntu.json 0: No such file or directory
+./apt-mirror.sh: line 25: /opt/mirrortools/mirrorInfoCollection/update.php kali.json 0: No such file or directory
+./apt-mirror.sh: line 25: /opt/mirrortools/mirrorInfoCollection/update.php kali_security.json 0: No such file or directory
+./apt-mirror.sh: line 25: /opt/mirrortools/mirrorInfoCollection/update.php mongodb.json 0: No such file or directory
+./apt-mirror.sh: line 25: /opt/mirrortools/mirrorInfoCollection/update.php openstack.json 0: No such file or directory
+./apt-mirror.sh: line 25: /opt/mirrortools/mirrorInfoCollection/update.php pypi.json 0: No such file or directory
+./apt-mirror.sh: line 25: /opt/mirrortools/mirrorInfoCollection/update.php ubuntu.json 0: No such file or directory
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:29
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:29
+./apt/apt-mirror.sh: line 37: ./awstatsbuild.sh: Permission denied
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:29
+/opt/mirrortools/apt/apt-mirror.sh: line 37: ./awstatsbuild.sh: Permission denied
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:29
+/opt/mirrortools/apt/apt-mirror.sh: line 37: ./awstatsbuild.sh: Permission denied
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:29
+/opt/mirrortools/apt/apt-mirror.sh: line 37: ./awstatsbuild.sh: Permission denied
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:29
+/opt/mirrortools/apt/apt-mirror.sh: line 37: ./awstatsbuild.sh: Permission denied
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:29
+/opt/mirrortools/apt/apt-mirror.sh: line 37: ./awstatsbuild.sh: Permission denied
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:29
+/opt/mirrortools/apt/apt-mirror.sh: line 37: ./awstatsbuild.sh: Permission denied
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:29
+/opt/mirrortools/apt/apt-mirror.sh: line 37: ./awstatsbuild.sh: Permission denied
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:29
+/opt/mirrortools/apt/apt-mirror.sh: line 37: ./awstatsbuild.sh: Permission denied
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:29
+/opt/mirrortools/apt/apt-mirror.sh: line 37: ./awstatsbuild.sh: Permission denied
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:29
+/opt/mirrortools/apt/apt-mirror.sh: line 37: ./awstatsbuild.sh: Permission denied
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:29
+/opt/mirrortools/apt/apt-mirror.sh: line 37: ./awstatsbuild.sh: Permission denied
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:29
+/opt/mirrortools/apt/apt-mirror.sh: line 37: ./awstatsbuild.sh: Permission denied
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:29
+/opt/mirrortools/apt/apt-mirror.sh: line 37: ./awstatsbuild.sh: Permission denied
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:29
+/opt/mirrortools/apt/apt-mirror.sh: line 37: ./awstatsbuild.sh: Permission denied
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:29
+/opt/mirrortools/apt/apt-mirror.sh: line 37: ./awstatsbuild.sh: Permission denied
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:29
+/opt/mirrortools/apt/apt-mirror.sh: line 37: ./awstatsbuild.sh: Permission denied
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:29
+/opt/mirrortools/apt/apt-mirror.sh: line 37: ./awstatsbuild.sh: Permission denied
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:29
+/opt/mirrortools/apt/apt-mirror.sh: line 37: ./awstatsbuild.sh: Permission denied
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:29
+/opt/mirrortools/apt/apt-mirror.sh: line 37: ./awstatsbuild.sh: Permission denied
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:29
+/opt/mirrortools/apt/apt-mirror.sh: line 37: ./awstatsbuild.sh: Permission denied
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:29
+/opt/mirrortools/apt/apt-mirror.sh: line 37: ./awstatsbuild.sh: Permission denied
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:29
+/opt/mirrortools/apt/apt-mirror.sh: line 37: ./awstatsbuild.sh: Permission denied
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:29
+/opt/mirrortools/apt/apt-mirror.sh: line 37: ./awstatsbuild.sh: Permission denied
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:29
+/opt/mirrortools/apt/apt-mirror.sh: line 37: ./awstatsbuild.sh: Permission denied
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:29
+/opt/mirrortools/apt/apt-mirror.sh: line 37: ./awstatsbuild.sh: Permission denied
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:29
+/opt/mirrortools/apt/apt-mirror.sh: line 37: ./awstatsbuild.sh: Permission denied
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:29
+/opt/mirrortools/apt/apt-mirror.sh: line 37: ./awstatsbuild.sh: Permission denied
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:29
+/opt/mirrortools/apt/apt-mirror.sh: line 37: ./awstatsbuild.sh: Permission denied
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:29
+/opt/mirrortools/apt/apt-mirror.sh: line 37: ./awstatsbuild.sh: Permission denied
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:29
+/opt/mirrortools/apt/apt-mirror.sh: line 37: ./awstatsbuild.sh: Permission denied
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:29
+/opt/mirrortools/apt/apt-mirror.sh: line 37: ./awstatsbuild.sh: Permission denied
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:29
+/opt/mirrortools/apt/apt-mirror.sh: line 37: ./awstatsbuild.sh: Permission denied
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:29
+/opt/mirrortools/apt/apt-mirror.sh: line 37: ./awstatsbuild.sh: Permission denied
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:29
+/opt/mirrortools/apt/apt-mirror.sh: line 37: ./awstatsbuild.sh: Permission denied
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:29
+/opt/mirrortools/apt/apt-mirror.sh: line 37: ./awstatsbuild.sh: Permission denied
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:29
+/opt/mirrortools/apt/apt-mirror.sh: line 37: ./awstatsbuild.sh: Permission denied
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:29
+/opt/mirrortools/apt/apt-mirror.sh: line 37: ./awstatsbuild.sh: Permission denied
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:29
+/opt/mirrortools/apt/apt-mirror.sh: line 37: ./awstatsbuild.sh: Permission denied
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:29
+/opt/mirrortools/apt/apt-mirror.sh: line 37: ./awstatsbuild.sh: Permission denied
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:29
+/opt/mirrortools/apt/apt-mirror.sh: line 37: ./awstatsbuild.sh: Permission denied
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:29
+/opt/mirrortools/apt/apt-mirror.sh: line 37: ./awstatsbuild.sh: Permission denied
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:29
+/opt/mirrortools/apt/apt-mirror.sh: line 37: ./awstatsbuild.sh: Permission denied
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:29
+/opt/mirrortools/apt/apt-mirror.sh: line 37: ./awstatsbuild.sh: Permission denied
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:29
+/opt/mirrortools/apt/apt-mirror.sh: line 37: ./awstatsbuild.sh: Permission denied
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:29
+/opt/mirrortools/apt/apt-mirror.sh: line 37: ./awstatsbuild.sh: Permission denied
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:29
+./apt-mirror.sh: line 37: ./awstatsbuild.sh: Permission denied
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+/opt/mirrortools/apt/apt-mirror.sh: line 37: ./awstatsbuild.sh: Permission denied
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+/opt/mirrortools/apt/apt-mirror.sh: line 37: ./awstatsbuild.sh: Permission denied
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+/opt/mirrortools/apt/apt-mirror.sh: line 37: ./awstatsbuild.sh: Permission denied
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+/opt/mirrortools/apt/apt-mirror.sh: line 37: ./awstatsbuild.sh: Permission denied
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+/opt/mirrortools/apt/apt-mirror.sh: line 37: ./awstatsbuild.sh: Permission denied
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+/opt/mirrortools/apt/apt-mirror.sh: line 37: ./awstatsbuild.sh: Permission denied
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+/opt/mirrortools/apt/apt-mirror.sh: line 37: ./awstatsbuild.sh: Permission denied
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+/opt/mirrortools/apt/apt-mirror.sh: line 37: ./awstatsbuild.sh: Permission denied
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+/opt/mirrortools/apt/apt-mirror.sh: line 37: ./awstatsbuild.sh: Permission denied
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+/opt/mirrortools/apt/apt-mirror.sh: line 37: ./awstatsbuild.sh: Permission denied
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+/opt/mirrortools/apt/apt-mirror.sh: line 37: ./awstatsbuild.sh: Permission denied
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+/opt/mirrortools/apt/apt-mirror.sh: line 37: ./awstatsbuild.sh: Permission denied
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+/opt/mirrortools/apt/apt-mirror.sh: line 37: ./awstatsbuild.sh: Permission denied
+apt-mirror is already running, exiting at ./apt-mirror line 191.
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+/opt/mirrortools/apt/apt-mirror.sh: line 37: ./awstatsbuild.sh: Permission denied
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+/opt/mirrortools/apt/apt-mirror.sh: line 37: ./awstatsbuild.sh: Permission denied
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+/opt/mirrortools/apt/apt-mirror.sh: line 37: ./awstatsbuild.sh: Permission denied
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+/opt/mirrortools/apt/apt-mirror.sh: line 37: ./awstatsbuild.sh: Permission denied
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+/opt/mirrortools/apt/apt-mirror.sh: line 37: ./awstatsbuild.sh: Permission denied
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+/opt/mirrortools/apt/apt-mirror.sh: line 37: ./awstatsbuild.sh: Permission denied
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+/opt/mirrortools/apt/apt-mirror.sh: line 37: ./awstatsbuild.sh: Permission denied
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+/opt/mirrortools/apt/apt-mirror.sh: line 37: ./awstatsbuild.sh: Permission denied
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+/opt/mirrortools/apt/apt-mirror.sh: line 37: ./awstatsbuild.sh: Permission denied
+apt-mirror is already running, exiting at ./apt-mirror line 191.
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+/opt/mirrortools/apt/apt-mirror.sh: line 37: ./awstatsbuild.sh: Permission denied
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+./apt-mirror.sh: line 37: ./awstatsbuild.sh: Permission denied
+sh: 1: cannot open mirrors.ustc.edu.cn/raspbian/raspbian///dists/wheezy/main/binary-arm/Packages.gz: No such file
+apt-mirror: can't open index in proceed_index_gz at ./apt-mirror line 450.
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+./apt-mirror.sh: line 37: ./awstatsbuild.sh: Permission denied
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+./apt-mirror.sh: line 37: ./awstatsbuild.sh: Permission denied
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+/opt/mirrortools/apt/apt-mirror.sh: line 37: ./awstatsbuild.sh: Permission denied
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+/opt/mirrortools/apt/apt-mirror.sh: line 37: ./awstatsbuild.sh: Permission denied
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+/opt/mirrortools/apt/apt-mirror.sh: line 37: ./awstatsbuild.sh: Permission denied
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+/opt/mirrortools/apt/apt-mirror.sh: line 37: ./awstatsbuild.sh: Permission denied
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+/opt/mirrortools/apt/apt-mirror.sh: line 37: ./awstatsbuild.sh: Permission denied
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+/opt/mirrortools/apt/apt-mirror.sh: line 37: ./awstatsbuild.sh: Permission denied
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+/opt/mirrortools/apt/apt-mirror.sh: line 37: ./awstatsbuild.sh: Permission denied
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+/opt/mirrortools/apt/apt-mirror.sh: line 37: ./awstatsbuild.sh: Permission denied
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+/opt/mirrortools/apt/apt-mirror.sh: line 37: ./awstatsbuild.sh: Permission denied
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+/opt/mirrortools/apt/apt-mirror.sh: line 37: ./awstatsbuild.sh: Permission denied
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+/opt/mirrortools/apt/apt-mirror.sh: line 37: ./awstatsbuild.sh: Permission denied
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+/opt/mirrortools/apt/apt-mirror.sh: line 37: ./awstatsbuild.sh: Permission denied
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+/opt/mirrortools/apt/apt-mirror.sh: line 37: ./awstatsbuild.sh: Permission denied
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+/opt/mirrortools/apt/apt-mirror.sh: line 37: ./awstatsbuild.sh: Permission denied
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+/opt/mirrortools/apt/apt-mirror.sh: line 37: ./awstatsbuild.sh: Permission denied
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+/opt/mirrortools/apt/apt-mirror.sh: line 37: ./awstatsbuild.sh: Permission denied
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+/opt/mirrortools/apt/apt-mirror.sh: line 37: ./awstatsbuild.sh: Permission denied
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+/opt/mirrortools/apt/apt-mirror.sh: line 37: ./awstatsbuild.sh: Permission denied
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+/opt/mirrortools/apt/apt-mirror.sh: line 37: ./awstatsbuild.sh: Permission denied
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+/opt/mirrortools/apt/apt-mirror.sh: line 37: ./awstatsbuild.sh: Permission denied
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+/opt/mirrortools/apt/apt-mirror.sh: line 37: ./awstatsbuild.sh: Permission denied
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+/opt/mirrortools/apt/apt-mirror.sh: line 37: ./awstatsbuild.sh: Permission denied
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+/opt/mirrortools/apt/apt-mirror.sh: line 37: ./awstatsbuild.sh: Permission denied
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+/opt/mirrortools/apt/apt-mirror.sh: line 37: ./awstatsbuild.sh: Permission denied
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+/opt/mirrortools/apt/apt-mirror.sh: line 37: ./awstatsbuild.sh: Permission denied
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+/opt/mirrortools/apt/apt-mirror.sh: line 37: ./awstatsbuild.sh: Permission denied
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+/opt/mirrortools/apt/apt-mirror.sh: line 37: ./awstatsbuild.sh: Permission denied
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+/opt/mirrortools/apt/apt-mirror.sh: line 37: ./awstatsbuild.sh: Permission denied
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+/opt/mirrortools/apt/apt-mirror.sh: line 37: ./awstatsbuild.sh: Permission denied
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+/opt/mirrortools/apt/apt-mirror.sh: line 37: ./awstatsbuild.sh: Permission denied
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+/opt/mirrortools/apt/apt-mirror.sh: line 37: ./awstatsbuild.sh: Permission denied
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+/opt/mirrortools/apt/apt-mirror.sh: line 37: ./awstatsbuild.sh: Permission denied
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+/opt/mirrortools/apt/apt-mirror.sh: line 37: ./awstatsbuild.sh: Permission denied
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+/opt/mirrortools/apt/apt-mirror.sh: line 37: ./awstatsbuild.sh: Permission denied
+sh: 1: cannot open mirrors.ustc.edu.cn/raspbian/raspbian//dists/wheezy/main/binary-arm/Packages.gz: No such file
+apt-mirror: can't open index in proceed_index_gz at ./apt-mirror line 450.
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+./apt-mirror.sh: line 37: ./awstatsbuild.sh: Permission denied
+sh: 1: cannot open ports.ubuntu.com/ubuntu-ports///dists/quantal/main/binary-arm/Packages.gz: No such file
+apt-mirror: can't open index in proceed_index_gz at ./apt-mirror line 450.
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+sh: 1: cannot open ports.ubuntu.com/ubuntu-ports//dists/quantal/main/binary-arm/Packages.gz: No such file
+apt-mirror: can't open index in proceed_index_gz at ./apt-mirror line 450.
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+apt-mirror is already running, exiting at ./apt-mirror line 187.
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+apt-mirror is already running, exiting at ./apt-mirror line 187.
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+apt-mirror is already running, exiting at ./apt-mirror line 187.
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+apt-mirror is already running, exiting at ./apt-mirror line 187.
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+apt-mirror is already running, exiting at ./apt-mirror line 187.
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+apt-mirror is already running, exiting at ./apt-mirror line 187.
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+apt-mirror is already running, exiting at ./apt-mirror line 187.
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+apt-mirror is already running, exiting at ./apt-mirror line 187.
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+[error|Fri Jan 31 18:01:37 2014]apt-mirror is already running, exiting at ./apt-mirror line 187.
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+[error|Fri Jan 31 20:04:50 2014]apt-mirror is already running, exiting at ./apt-mirror line 187.
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+[error|Fri Jan 31 22:00:38 2014]apt-mirror is already running, exiting at ./apt-mirror line 187.
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+[error|Sat Feb  1 00:00:22 2014]apt-mirror is already running, exiting at ./apt-mirror line 187.
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+[error|Sat Feb  1 02:03:56 2014]apt-mirror is already running, exiting at ./apt-mirror line 187.
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+[error|Sat Feb  1 04:06:38 2014]apt-mirror is already running, exiting at ./apt-mirror line 187.
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+/opt/mirrortools/apt/apt-mirror.sh: line 21: ./apt-mirror: Permission denied
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+/opt/mirrortools/apt/apt-mirror.sh: line 21: ./apt-mirror: Permission denied
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+/opt/mirrortools/apt/apt-mirror.sh: line 21: ./apt-mirror: Permission denied
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+/opt/mirrortools/apt/apt-mirror.sh: line 21: ./apt-mirror: Permission denied
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+/opt/mirrortools/apt/apt-mirror.sh: line 21: ./apt-mirror: Permission denied
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+/opt/mirrortools/apt/apt-mirror.sh: line 21: ./apt-mirror: Permission denied
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+/opt/mirrortools/apt/apt-mirror.sh: line 21: ./apt-mirror: Permission denied
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+/opt/mirrortools/apt/apt-mirror.sh: line 21: ./apt-mirror: Permission denied
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+/opt/mirrortools/apt/apt-mirror.sh: line 21: ./apt-mirror: Permission denied
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+/opt/mirrortools/apt/apt-mirror.sh: line 21: ./apt-mirror: Permission denied
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+/opt/mirrortools/apt/apt-mirror.sh: line 21: ./apt-mirror: Permission denied
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+/opt/mirrortools/apt/apt-mirror.sh: line 21: ./apt-mirror: Permission denied
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+/opt/mirrortools/apt/apt-mirror.sh: line 21: ./apt-mirror: Permission denied
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+/opt/mirrortools/apt/apt-mirror.sh: line 21: ./apt-mirror: Permission denied
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+/opt/mirrortools/apt/apt-mirror.sh: line 21: ./apt-mirror: Permission denied
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+/opt/mirrortools/apt/apt-mirror.sh: line 21: ./apt-mirror: Permission denied
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+/opt/mirrortools/apt/apt-mirror.sh: line 21: ./apt-mirror: Permission denied
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+/opt/mirrortools/apt/apt-mirror.sh: line 21: ./apt-mirror: Permission denied
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+/opt/mirrortools/apt/apt-mirror.sh: line 21: ./apt-mirror: Permission denied
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+/opt/mirrortools/apt/apt-mirror.sh: line 21: ./apt-mirror: Permission denied
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+/opt/mirrortools/apt/apt-mirror.sh: line 21: ./apt-mirror: Permission denied
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+./apt-mirror.sh: line 21: ./apt-mirror: Permission denied
+./apt-mirror.sh: line 21: ./apt-mirror: Permission denied
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+./apt-mirror.sh: line 21: ./apt-mirror: Permission denied
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+[error|Fri Feb  7 04:00:02 2014]apt-mirror is already running, exiting at ./apt-mirror line 187.
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+[error|Fri Feb  7 06:00:01 2014]apt-mirror is already running, exiting at ./apt-mirror line 187.
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+[error|Fri Feb  7 08:00:01 2014]apt-mirror is already running, exiting at ./apt-mirror line 187.
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+[error|Fri Feb  7 10:00:01 2014]apt-mirror is already running, exiting at ./apt-mirror line 187.
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+[error|Fri Feb  7 12:00:02 2014]apt-mirror is already running, exiting at ./apt-mirror line 187.
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+[error|Fri Feb  7 14:00:01 2014]apt-mirror is already running, exiting at ./apt-mirror line 187.
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+[error|Fri Feb  7 16:00:01 2014]apt-mirror is already running, exiting at ./apt-mirror line 187.
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+[error|Fri Feb  7 18:00:01 2014]apt-mirror is already running, exiting at ./apt-mirror line 187.
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+[error|Fri Feb  7 20:00:01 2014]apt-mirror is already running, exiting at ./apt-mirror line 187.
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+[error|Fri Feb  7 22:00:01 2014]apt-mirror is already running, exiting at ./apt-mirror line 187.
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+[error|Sat Feb  8 00:00:01 2014]apt-mirror is already running, exiting at ./apt-mirror line 187.
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+[error|Sat Feb  8 02:00:01 2014]apt-mirror is already running, exiting at ./apt-mirror line 187.
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+[error|Sat Feb  8 04:00:01 2014]apt-mirror is already running, exiting at ./apt-mirror line 187.
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10
+nginx: [warn] the "log_format" directive may be used only on "http" level in /etc/nginx/sites-enabled/default:10

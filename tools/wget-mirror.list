@@ -1,0 +1,63 @@
+#<pre>
+############# config ##################
+# set base_path    /mirrors/apt
+#
+ set mirror_path  $base_path/mirror
+ set skel_path    $base_path/skel
+ set var_path     $base_path/var
+ set cleanscript $var_path/clean.sh
+ set defaultarch  amd64
+ set postmirror_script $var_path/postmirror.sh
+ set run_postmirror 0
+set nthreads     20
+set _tilde 0
+#
+############# end config ##############
+
+wget http://downloads-distro.mongodb.org/repo/ubuntu-upstart dist 10gen 
+wget http://downloads-distro.mongodb.org/repo/ubuntu-upstart dist 10gen 
+wget http://mirrors.ustc.edu.cn/ubuntu precise main restricted universe multiverse 
+wget http://mirrors.ustc.edu.cn/ubuntu precise main restricted universe multiverse 
+wget http://mirrors.ustc.edu.cn/ubuntu precise-updates main restricted universe multiverse 
+wget http://mirrors.ustc.edu.cn/ubuntu precise-updates main restricted universe multiverse 
+wget http://mirrors.ustc.edu.cn/ubuntu precise-security main restricted universe multiverse 
+wget http://mirrors.ustc.edu.cn/ubuntu precise-security main restricted universe multiverse 
+wget http://mirrors.ustc.edu.cn/ubuntu precise-backports main restricted universe multiverse 
+wget http://mirrors.ustc.edu.cn/ubuntu precise-backports main restricted universe multiverse 
+wget http://mirrors.ustc.edu.cn/ubuntu precise main restricted universe multiverse 
+wget http://mirrors.ustc.edu.cn/ubuntu precise-security main restricted universe multiverse 
+wget http://mirrors.ustc.edu.cn/ubuntu precise-updates main restricted universe multiverse 
+wget http://mirrors.ustc.edu.cn/ubuntu precise-backports main restricted universe multiverse 
+wget http://ubuntu-cloud.archive.canonical.com/ubuntu precise-updates/folsom main 
+wget http://ubuntu-cloud.archive.canonical.com/ubuntu precise-updates/folsom main 
+wget http://ubuntu-cloud.archive.canonical.com/ubuntu precise-updates/folsom main 
+wget http://ubuntu-cloud.archive.canonical.com/ubuntu precise-updates/grizzly main 
+wget http://ubuntu-cloud.archive.canonical.com/ubuntu precise-updates/grizzly main 
+wget http://ubuntu-cloud.archive.canonical.com/ubuntu precise-updates/grizzly main 
+wget http://ubuntu-cloud.archive.canonical.com/ubuntu precise-updates/havana main 
+wget http://ubuntu-cloud.archive.canonical.com/ubuntu precise-updates/havana main 
+wget http://ubuntu-cloud.archive.canonical.com/ubuntu precise-updates/havana main 
+wget http://http.kali.org/kali kali main non-free contrib 
+wget http://http.kali.org/kali kali main non-free contrib 
+wget http://http.kali.org/kali kali main non-free contrib 
+wget http://security.kali.org/kali-security kali/updates main contrib non-free 
+wget http://security.kali.org/kali-security kali/updates main contrib non-free 
+wget http://mirrors.ustc.edu.cn/ubuntu saucy main restricted universe multiverse 
+wget http://mirrors.ustc.edu.cn/ubuntu saucy main restricted universe multiverse  
+wget http://mirrors.ustc.edu.cn/ubuntu saucy-updates main restricted universe multiverse  
+wget http://mirrors.ustc.edu.cn/ubuntu saucy-updates main restricted universe multiverse 
+wget http://mirrors.ustc.edu.cn/ubuntu saucy-security main restricted universe multiverse 
+wget http://mirrors.ustc.edu.cn/ubuntu saucy-security main restricted universe multiverse 
+wget http://mirrors.ustc.edu.cn/ubuntu saucy-backports main restricted universe multiverse  
+wget http://mirrors.ustc.edu.cn/ubuntu saucy-backports main restricted universe multiverse 
+wget http://mirrors.ustc.edu.cn/ubuntu saucy main restricted universe multiverse 
+wget http://mirrors.ustc.edu.cn/ubuntu saucy-security main restricted universe multiverse 
+wget http://mirrors.ustc.edu.cn/ubuntu saucy-updates main restricted universe multiverse 
+wget http://mirrors.ustc.edu.cn/ubuntu saucy-backports main restricted universe multiverse 
+wget http://mirrors.ustc.edu.cn/raspbian/raspbian wheezy main non-free contrib 
+wget http://mirrors.ustc.edu.cn/raspbian/raspbian wheezy main non-free contrib 
+wget http://ports.ubuntu.com/ubuntu-ports/ precise main restricted universe multiverse 
+wget http://ports.ubuntu.com/ubuntu-ports/ saucy main restricted universe multiverse  
+wget http://ports.ubuntu.com/ubuntu-ports quantal main universe 
+wget http://ports.ubuntu.com/ubuntu-ports/ quantal main universe 
+#</pre>

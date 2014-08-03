@@ -1,10 +1,1 @@
-{
-	"rootpath":"/mirrors/apt/mirror/downloads-distro.mongodb.org",
-	"href":"mongodb/",
-	"intro":"mongodb",
-	"name":"mongodb",
-	"title":"mongodb",
-	"official":"non-official",
-	"worker_link":"#",
-	"worker_name":"Nobody"
-}
+{"id":3,"rootpath":"\/mirrors\/apt\/mirror\/downloads-distro.mongodb.org","href":"mongodb","intro":"mongodb","name":"mongodb","title":"mongodb","official":false,"workerLink":"#","workerName":"Nobody","status":{}}
